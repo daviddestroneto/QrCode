@@ -3,7 +3,6 @@ package com.poc.qrcode.usecase.impl;
 import com.google.zxing.WriterException;
 import com.poc.qrcode.usecase.GifSequenceWriter;
 import com.poc.qrcode.usecase.QrCodeBase64UseCase;
-import com.poc.qrcode.usecase.converter.Base64Converter;
 import com.poc.qrcode.usecase.converter.QrCodeConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -18,9 +17,6 @@ import java.util.*;
 
 @Service
 public class QrCodeBase64UseCaseImpl implements QrCodeBase64UseCase {
-
-    @Autowired
-    private Base64Converter base64Converter;
 
     @Autowired
     private QrCodeConverter qrCodeConverter;
